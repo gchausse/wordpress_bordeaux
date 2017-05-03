@@ -20,3 +20,7 @@ Version: 0.1.0
     float: right;
     margin-top: 2em;
 }
+
+.themonic-nav ul.nav-menu {
+width : 90%;
+}
