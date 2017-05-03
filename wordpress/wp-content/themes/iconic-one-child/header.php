@@ -33,14 +33,14 @@
 <div id="page" class="site">
 	<header id="masthead" class="site-header" role="banner">
 			<?php if ( get_theme_mod( 'themonic_logo' ) ) : ?>
-		
+
 		<div class="themonic-logo">
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo esc_url( get_theme_mod( 'themonic_logo' ) ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>
 		</div>
-	<?php if( get_theme_mod( 'iconic_one_social_activate' ) == '1') { ?>	
+	<?php if( get_theme_mod( 'iconic_one_social_activate' ) == '1') { ?>
 		<div class="socialmedia">
 			<?php if( get_theme_mod( 'twitter_url' ) !== '' ) { ?>
-				<a href="<?php echo esc_url( get_theme_mod( 'twitter_url', 'default_value' ) ); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/twitter.png" alt="Follow us on Twitter"/></a> 
+				<a href="<?php echo esc_url( get_theme_mod( 'twitter_url', 'default_value' ) ); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/twitter.png" alt="Follow us on Twitter"/></a>
 			<?php } ?>
 			<?php if( get_theme_mod( 'facebook_url' ) !== '' ) { ?>
 					<a href="<?php echo esc_url( get_theme_mod( 'facebook_url', 'default_value' ) ); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" alt="Follow us on Facebook"/></a>
@@ -49,15 +49,15 @@
 					<a href="<?php echo esc_url(get_theme_mod( 'plus_url', 'default_value' ) ); ?>" rel="author" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/gplus.png" alt="Follow us on Google Plus"/></a>
 			<?php } ?>
 			<?php if( get_theme_mod( 'rss_url' ) !== '' ) { ?>
-			<a class="rss" href="<?php echo esc_url( get_theme_mod( 'rss_url', 'default_value' ) ); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/rss.png" alt="Follow us on rss"/></a>			
+			<a class="rss" href="<?php echo esc_url( get_theme_mod( 'rss_url', 'default_value' ) ); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/rss.png" alt="Follow us on rss"/></a>
 			<?php } ?>
 		</div>
-	<?php } ?>	
+	<?php } ?>
 
 		<?php else : ?>
 		<div class="io-title-description">
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-				<br .../> 
+				<br .../>
 				<?php if ( get_bloginfo( 'description' )  !== '' ) { ?>
 				 <a class="site-description"><?php bloginfo( 'description' ); ?></a>
 				<?php } ?>
@@ -65,7 +65,7 @@
 	<?php if( get_theme_mod( 'iconic_one_social_activate' ) == '1') { ?>
 		<div class="socialmedia">
 			<?php if( get_theme_mod( 'twitter_url' ) !== '' ) { ?>
-				<a href="<?php echo esc_url( get_theme_mod( 'twitter_url', 'default_value' ) ); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/twitter.png" alt="Follow us on Twitter"/></a> 
+				<a href="<?php echo esc_url( get_theme_mod( 'twitter_url', 'default_value' ) ); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/twitter.png" alt="Follow us on Twitter"/></a>
 			<?php } ?>
 			<?php if( get_theme_mod( 'facebook_url' ) !== '' ) { ?>
 					<a href="<?php echo esc_url( get_theme_mod( 'facebook_url', 'default_value' ) ); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" alt="Follow us on Facebook"/></a>
@@ -74,15 +74,21 @@
 					<a href="<?php echo esc_url(get_theme_mod( 'plus_url', 'default_value' ) ); ?>" rel="author" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/gplus.png" alt="Follow us on Google Plus"/></a>
 			<?php } ?>
 			<?php if( get_theme_mod( 'rss_url' ) !== '' ) { ?>
-			<a class="rss" href="<?php echo esc_url( get_theme_mod( 'rss_url', 'default_value' ) ); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/rss.png" alt="Follow us on rss"/></a>			
+			<a class="rss" href="<?php echo esc_url( get_theme_mod( 'rss_url', 'default_value' ) ); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/rss.png" alt="Follow us on rss"/></a>
 			<?php } ?>
 		</div>
-	<?php } ?>	
+	<?php } ?>
 		<?php endif; ?>
 
 		<nav id="site-navigation" class="themonic-nav" role="navigation">
 			<a class="assistive-text" href="#main" title="<?php esc_attr_e( 'Skip to content', 'iconic-one' ); ?>"><?php _e( 'Skip to content', 'iconic-one' ); ?></a>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'menu-top', 'menu_class' => 'nav-menu', 'container' => 'ul' ) ); ?>
+			<a href="http://localhost:8080/wordpress_bordeaux/wordpress"><img src="/wordpress_bordeaux/wordpress/wp-content/uploads/2017/05/bordeaux.png"/></a>
+			<?php wp_nav_menu( array(
+				'theme_location' => 'primary',
+				'menu_id' => 'menu-top',
+				'menu_class' => 'nav-menu',
+				'container' => 'ul'
+			 ) ); ?>
 		</nav><!-- #site-navigation -->
 		<div class="clear"></div>
 	</header><!-- #masthead -->
