@@ -86,7 +86,7 @@
 
 		<nav id="site-navigation" class="themonic-nav" role="navigation">
 			<a class="assistive-text" href="#main" title="<?php esc_attr_e( 'Skip to content', 'iconic-one' ); ?>"><?php _e( 'Skip to content', 'iconic-one' ); ?></a>
-			<a href="http://localhost:8080/wordpress_bordeaux/wordpress"><img src="/wordpress_bordeaux/wordpress/wp-content/uploads/2017/05/bordeaux.png"/></a>
+			<a href="http://localhost:8080/wordpress_bordeaux/wordpress"><img src="/wordpress_bordeaux/wordpress/wp-content/uploads/2017/05/bordeaux.png" /></a>
 			<?php wp_nav_menu( array(
 				'theme_location' => 'primary',
 				'menu_id' => 'menu-top',

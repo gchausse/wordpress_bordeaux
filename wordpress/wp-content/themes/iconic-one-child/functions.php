@@ -20,4 +20,5 @@ function wpdocs_my_search_form( $form ) {
 
 }
 
+
 ?>
