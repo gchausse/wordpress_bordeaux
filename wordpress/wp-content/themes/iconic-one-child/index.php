@@ -9,7 +9,7 @@
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package WordPress 
+ * @package WordPress
  * @subpackage Iconic_One
  * @since Iconic One 1.0
  */
@@ -17,12 +17,12 @@
 get_header(); ?>
 
 	<div id="primary" class="site-content">
-		<div id="content" role="main">
+		<div id="content" role="main" class="flex">
 		<?php if ( have_posts() ) : ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-				<?php get_template_part( 'content', get_post_format() ); ?>
+				<?php get_template_part( 'small-post'); ?>
 			<?php endwhile; ?>
 
 			<?php themonic_content_nav( 'nav-below' ); ?>

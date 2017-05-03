@@ -38,9 +38,6 @@
 		<div class="themonic-logo">
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo esc_url( get_theme_mod( 'themonic_logo' ) ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>
 		</div>
-		<div>
-			<?php get_search_form(); ?>
-		</div>
 	<?php if( get_theme_mod( 'iconic_one_social_activate' ) == '1') { ?>
 		<div class="socialmedia">
 			<?php if( get_theme_mod( 'twitter_url' ) !== '' ) { ?>
@@ -59,6 +56,9 @@
 	<?php } ?>
 
 		<?php else : ?>
+            <div>
+                <?php get_search_form(); ?>
+            </div>
 		<div class="io-title-description">
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 				<br .../>

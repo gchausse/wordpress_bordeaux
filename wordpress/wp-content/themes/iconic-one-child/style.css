@@ -10,7 +10,7 @@ Version: 0.1.0
     background: white;
     border: 0;
     color: #FFFFFF;
-    min-width: 14%;
+    min-width: 24%;
     background-image: url("/wordpress_bordeaux/wordpress/wp-content/uploads/2017/05/1493822231_search.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -19,4 +19,23 @@ Version: 0.1.0
 #searchform {
     float: right;
     margin-top: 2em;
+}
+
+#s {
+    width: 65%;
+}
+
+#searchsubmit {
+    padding: 1em;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+h2 {
+    text-align: center;
 }
