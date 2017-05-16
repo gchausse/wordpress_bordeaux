@@ -43,3 +43,37 @@ h2 {
 .themonic-nav ul.nav-menu {
 width : 90%;
 }
+
+
+.themonic-nav ul.nav-menu, .themonic-nav div.nav-menu > ul{
+    background-color: #6c6966;
+    border-radius: 6px;
+    border-bottom: none;
+}
+
+.themonic-nav li a{
+    color: white;
+    background-color: #6c6966;
+
+}
+
+.themonic-nav li a:hover {
+    background-color: #d82142;
+}
+
+.themonic-nav li ul li a {
+    background-color: white;
+    color: silver;
+}
+
+
+#menu-menu-aside li:nth-child(2n+1) {
+    width: 100%;
+
+
+}
+#menu-menu-aside li:nth-child(2n+0) {
+    width: 100%;
+
+
+}
